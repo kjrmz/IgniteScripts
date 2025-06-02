@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopt Me Script</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+  
+<nav class="bg-gray-900 text-white text-center py-4">
+  <a href="index.html" class="px-3 hover:underline">🏠 Home</a>
+  <a href="adoptme.html" class="px-3 hover:underline">Adopt Me</a>
+  <a href="mm2.html" class="px-3 hover:underline">MM2</a>
+  <a href="doors.html" class="px-3 hover:underline">DOORS</a>
+</nav>
+
+  <div class="text-center py-10">
+    <h1 class="text-3xl font-bold">Adopt Me Script</h1>
+  </div>
+  <div class="max-w-xl mx-auto bg-gray-900 rounded-lg shadow-lg p-5">
+    <h2 class="text-xl font-semibold mb-4">Adopt Me Script</h2>
+
+    <textarea id="scriptCode" class="hidden">-- Adopt Me Script
+loadstring(game:HttpGet("https://example.com/adoptme.lua"))()</textarea>
+    <button onclick="copyScript()" class="w-full bg-gray-700 py-2 rounded mb-6">📋 Copy Script</button>
+
+    <a href="#" class="w-full block bg-blue-600 text-white text-center py-2 rounded mb-2">Tutorial Download (IOS/ANDROID)</a>
+    <a href="#" class="w-full block bg-blue-600 text-white text-center py-2 rounded mb-2">Android/Ios Delta Executor!</a>
+    <a href="#" class="w-full block bg-blue-600 text-white text-center py-2 rounded mb-2">(RECOMMENDED) BEST EXECUTOR/TUTORIAL</a>
+  </div>
+
+  <div class="text-center text-gray-600 text-sm mt-10">© 2025 Shxdrag</div>
+
+  <script>
+    function copyScript() {
+      const script = document.getElementById("scriptCode");
+      script.select();
+      script.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("✅ Script copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
